@@ -1,6 +1,6 @@
 
 Meteor.startup(function() {
-  GoogleMaps.load({ v: '3', key: 'AIzaSyDUppLhIGSXnAMqLnkNqoOJTVj2lRfT5X8'});
+  GoogleMaps.load({ v: '3'});
   var currentLoc = Geolocation.latLng();
 });
 
