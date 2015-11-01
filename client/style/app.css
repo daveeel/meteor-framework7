@@ -1,3 +1,7 @@
 .panel {
   background-color: white;
 }
+
+.tab-link .icon {
+  font-size: 35px;
+}
