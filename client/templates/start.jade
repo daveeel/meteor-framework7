@@ -1,0 +1,31 @@
+template(name='start')
+  .view.start-view
+    .page.navbar-fixed
+      .navbar
+        .navbar-inner
+          .left
+            a.link.open-panel(href='#')
+              i.icon.icon-bars
+          .center Welcome
+      .page-content
+        .content-block
+          p This is a little F7 demo with Meteor
+        +smartSelect
+        
+template(name='smartSelect')
+  .content-block-title This is smart select element
+    a(href='/contacts') Contact Link
+  .list-block
+    ul
+      li
+        a.item-link.smart-select(href='#' data-open-in='popup' data-back-on-select='true')
+          select(name='fruits')
+            option(value='dortmund' selected) Dortmund
+            option(value='amsterdam') Amsterdam
+            option(value='newyork') New York
+            option(value='london') London
+          .item-content
+            .item-inner
+              .item-title Where are you from?
+              .item-after Dortmund
+          

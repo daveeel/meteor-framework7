@@ -18,6 +18,10 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-nobutakaoshiro:framework7-ios-material
 iron:router
 ccorcos:transitioner
+mquandalle:jade
+dessix:livescript-compiler
+
+# loftsteinn:framework7-ios
+loftsteinn:framework7-material

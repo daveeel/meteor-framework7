@@ -1,0 +1,21 @@
+template(name='contacts')
+  .view.start-view
+    .page.navbar-fixed
+      .navbar
+        .navbar-inner
+          .left
+            a.link.open-panel(href='#')
+              i.icon.icon-bars
+          .center My Contacts
+      .page-content.contacts-content
+        .list-block.contacts-block
+          each group
+            .list-group
+              ul
+                li.list-group-title {{this}}
+                each person_of_group this
+                  li
+                    .item-content
+                      .item-inner
+                        .item-title 
+                          a(href="{{pathFor 'swiper'}}") {{this}}

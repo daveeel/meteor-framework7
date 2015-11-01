@@ -1,0 +1,2 @@
+Template.android.onRendered !->
+    initLayout!
