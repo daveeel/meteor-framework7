@@ -88,6 +88,13 @@ Transitioner.transition do
     in: 'transition.pushUpIn'
     out: 'transition.pushDownOut'
 
+Transitioner.transition do
+  fromRoute: 'contactDetail'
+  toRoute: 'contacts'
+  velocityAnimation:
+    in: 'transition.pushLeftIn'
+    out: 'transition.pushRightOut'
+
 # RESORT TO DEFAULT
 
 # Transitioner.transition do

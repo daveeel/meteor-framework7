@@ -6,11 +6,11 @@ initLayout = function()
     if(myApp == null)
     {
         myApp = new Framework7({
-            material: true,
+            // material: true,
             materialRipple: false, //having some performance problems....
             showBarsOnPageScrollEnd: false,
-            // swipePanel: 'left',
-            panelsCloseByOutside: true
+            swipePanel: 'left',
+            // panelsCloseByOutside: true
         });
     }
     else
