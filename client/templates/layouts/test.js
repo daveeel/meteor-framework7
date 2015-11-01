@@ -30,6 +30,203 @@ Template.test.onRendered(function(){
       });
   });
 
+  $$('.confirm-ok').on('click', function () {
+      myApp.confirm('Are you sure?', function () {
+          myApp.alert('You clicked Ok button');
+      });
+  });
+
+  $$('.confirm-ok-cancel').on('click', function () {
+      myApp.confirm('Are you sure?',
+        function () {
+          myApp.alert('You clicked Ok button');
+        },
+        function () {
+          myApp.alert('You clicked Cancel button');
+        }
+      );
+  });
+  $$('.confirm-title-ok').on('click', function () {
+      myApp.confirm('Are you sure?', 'Custom Title', function () {
+          myApp.alert('You clicked Ok button');
+      });
+  });
+  $$('.confirm-title-ok-cancel').on('click', function () {
+      myApp.confirm('Are you sure?', 'Custom Title',
+        function () {
+          myApp.alert('You clicked Ok button');
+        },
+        function () {
+          myApp.alert('You clicked Cancel button');
+        }
+      );
+  });
+
+  $$('.prompt-ok').on('click', function () {
+      myApp.prompt('What is your name?', function (value) {
+          myApp.alert('Your name is "' + value + '". You clicked Ok button');
+      });
+  });
+
+  $$('.prompt-ok-cancel').on('click', function () {
+      myApp.prompt('What is your name?',
+        function (value) {
+          myApp.alert('Your name is "' + value + '". You clicked Ok button');
+        },
+        function (value) {
+          myApp.alert('Your name is "' + value + '". You clicked Cancel button');
+        }
+      );
+  });
+  $$('.prompt-title-ok').on('click', function () {
+      myApp.prompt('What is your name?', 'Custom Title', function (value) {
+          myApp.alert('Your name is "' + value + '". You clicked Ok button');
+      });
+  });
+  $$('.prompt-title-ok-cancel').on('click', function () {
+      myApp.prompt('What is your name?', 'Custom Title',
+        function (value) {
+          myApp.alert('Your name is "' + value + '". You clicked Ok button');
+        },
+        function (value) {
+          myApp.alert('Your name is "' + value + '". You clicked Cancel button');
+        }
+      );
+  });
+
+  $$('.login-modal').on('click', function () {
+      myApp.modalLogin('Authentication required', function (username, password) {
+          myApp.alert('Thank you! Username: ' + username + ', Password: ' + password);
+      });
+  });
+
+  $$('.password-modal').on('click', function () {
+      myApp.modalPassword('You password please:', function (password) {
+          myApp.alert('Thank you! Your password is: ' + password);
+      });
+  });
+
+  $$('.open-preloader').on('click', function () {
+      myApp.showPreloader();
+      setTimeout(function () {
+          myApp.hidePreloader();
+      }, 2000);
+  });
+  $$('.open-preloader-title').on('click', function () {
+      myApp.showPreloader('Custom Title')
+      setTimeout(function () {
+          myApp.hidePreloader();
+      }, 2000);
+  });
+
+  $$('.open-indicator').on('click', function () {
+      myApp.showIndicator();
+      setTimeout(function () {
+          myApp.hideIndicator();
+      }, 2000);
+  });
+
+  $$('.open-3-modal').on('click', function () {
+    myApp.modal({
+      title:  'Modal with 3 buttons',
+      text: 'Vivamus feugiat diam velit. Maecenas aliquet egestas lacus, eget pretium massa mattis non. Donec volutpat euismod nisl in posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae',
+      buttons: [
+        {
+          text: 'B1',
+          onClick: function() {
+            myApp.alert('You clicked first button!')
+          }
+        },
+        {
+          text: 'B2',
+          onClick: function() {
+            myApp.alert('You clicked second button!')
+          }
+        },
+        {
+          text: 'B3',
+          bold: true,
+          onClick: function() {
+            myApp.alert('You clicked third button!')
+          }
+        },
+      ]
+    })
+  });
+  $$('.open-slider-modal').on('click', function () {
+    var modal = myApp.modal({
+      title: 'Awesome Photos?',
+      text: 'What do you think about my photos?',
+      afterText:  '<div class="swiper-container" style="width: auto; margin:5px -15px -15px">'+
+                    '<div class="swiper-pagination"></div>'+
+                    '<div class="swiper-wrapper">'+
+                      '<div class="swiper-slide"><img src="..." height="150" style="display:block"></div>' +
+                      '<div class="swiper-slide"><img src="..." height="150" style="display:block"></div>'+
+                    '</div>'+
+                  '</div>',
+      buttons: [
+        {
+          text: 'Bad :('
+        },
+        {
+          text: 'Awesome!',
+          bold: true,
+          onClick: function () {
+            myApp.alert('Thanks! I know you like it!')
+          }
+        },
+      ]
+    })
+    myApp.swiper($$(modal).find('.swiper-container'), {pagination: '.swiper-pagination'});
+  });
+
+  $$('.open-tabs-modal').on('click', function () {
+    myApp.modal({
+      title:  '<div class="buttons-row">'+
+                '<a href="#tab1" class="button active tab-link">Tab 1</a>'+
+                '<a href="#tab2" class="button tab-link">Tab 2</a>'+
+              '</div>',
+      text: '<div class="tabs">'+
+              '<div class="tab active" id="tab1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis nunc non dolor euismod feugiat. Sed at sapien nisl. Ut et tincidunt metus. Suspendisse nec risus vel sapien placerat tincidunt. Nunc pulvinar urna tortor.</div>'+
+              '<div class="tab" id="tab2">Vivamus feugiat diam velit. Maecenas aliquet egestas lacus, eget pretium massa mattis non. Donec volutpat euismod nisl in posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</div>'+
+            '</div>',
+      buttons: [
+        {
+          text: 'Ok, got it',
+          bold: true
+        },
+      ]
+    })
+  });
+
+  $$('.open-vertical-modal').on('click', function () {
+    myApp.modal({
+      title:  'Vertical Buttons Layout',
+      text: 'Vivamus feugiat diam velit. Maecenas aliquet egestas lacus, eget pretium massa mattis non. Donec volutpat euismod nisl in posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae',
+      verticalButtons: true,
+      buttons: [
+        {
+          text: 'Button 1',
+          onClick: function() {
+            myApp.alert('You clicked first button!')
+          }
+        },
+        {
+          text: 'Button 2',
+          onClick: function() {
+            myApp.alert('You clicked second button!')
+          }
+        },
+        {
+          text: 'Button 3',
+          onClick: function() {
+            myApp.alert('You clicked third button!')
+          }
+        },
+      ]
+    })
+  });   
+
   $$('.create-popup').on('click', function () {
     var popupHTML = '<div class="popup">'+
                       '<div class="content-block">'+
