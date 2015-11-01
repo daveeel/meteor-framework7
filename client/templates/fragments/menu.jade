@@ -5,19 +5,19 @@ template(name="menu")
       .list-block
         ul
           li
-            a.item-content.item-link(href="{{pathFor 'start'}}") 
+            a.item-content.item-link(href="{{pathFor 'start'}}")
               .item-media
                 i.icon.icon-form-name
               .item-inner
                 .item-title Home
           li
-            a.item-content.item-link(href="{{pathFor 'contacts'}}") 
+            a.item-content.item-link(href="{{pathFor 'contacts'}}")
               .item-media
                 i.icon.icon-form-tel
               .item-inner
                 .item-title Contacts
           li
-            a.item-content.item-link(href="{{pathFor 'swiper'}}") 
+            a.item-content.item-link(href="{{pathFor 'swiper'}}")
               .item-media
                 i.icon.icon-form-url
               .item-inner
@@ -28,6 +28,12 @@ template(name="menu")
                 i.icon.icon-form-email
               .item-inner
                 .item-title Cards
+          li
+            a.item-content.item-link(href="{{pathFor 'notification'}}")
+              .item-media
+                i.icon.icon-form-url
+              .item-inner
+                .item-title Notification                
       p
         a(href="{{pathFor 'static-layout'}}") Static Layout
       p
@@ -37,6 +43,6 @@ template(name="menu")
       p
         a(href="{{pathFor 'test2'}}") Testing 2
       p
-        a(href="{{pathFor 'search'}}") Search           
+        a(href="{{pathFor 'search'}}") Search
       p
         a(href='#' class='close-panel') Close Panel
