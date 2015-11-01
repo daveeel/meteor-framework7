@@ -1,0 +1,37 @@
+<template name="notification">
+  <div class="view">
+    <div class="page navbar-fixed">
+      {{> navbar title="Notification List" leftIcon="icon-back" rightIcon="" }}
+
+      <div class="page-content pull-to-refresh-content">
+        <div class="pull-to-refresh-layer">
+          <div class="preloader"></div>
+          <div class="pull-to-refresh-arrow"></div>
+        </div>
+        <div class="list-block media-list">
+          <ul>
+            {{#each notificationItems}}
+              {{> notificationItem}}
+            {{/each}}
+          </ul>
+          <div class="list-block-label">
+            <p>Just pull page down to let the magic happen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template name="notificationItem">
+  <li class="item-content">
+    <div class="item-media"><img src="http://lorempixel.com/88/88/" width="44"></div>
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">{{this.title}}</div>
+      </div>
+      <div class="item-subtitle">{{this.subtitle}}</div>
+    </div>
+  </li>
+</template>
