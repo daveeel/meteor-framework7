@@ -46,6 +46,7 @@ Template.map.onRendered(function(){
   myApp = new Framework7({
       // material: true,
       materialRipple: false, //having some performance problems....
+      swipePanel: false,
       showBarsOnPageScrollEnd: false,
       // panelsCloseByOutside: true
   });
