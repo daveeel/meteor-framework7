@@ -27,3 +27,7 @@ loftsteinn:framework7-ios
 # loftsteinn:framework7-material
 fortawesome:fontawesome
 babrahams:constellation
+
+
+mdg:geolocation
+dburles:google-maps
