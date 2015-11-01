@@ -21,22 +21,22 @@ initLayout = function()
 //Doing some startup settings
 
 Meteor.startup(function() {
-    // $.Velocity.RegisterEffect('transition.pushLeftIn', {
-    //   defaultDuration: 500,
-    //   calls: [
-    //     [{translateX: ['0%', '-100%'], translateZ: 0, easing: "ease-in-out", opacity: [1, 1]}]
-    //   ]
-    // });
-    // $.Velocity.RegisterEffect('transition.pushRightIn', {
-    //   defaultDuration: 500,
-    //   calls: [
-    //     [{translateX: ['0%', '100%'], translateZ: 0, easing: "ease-in-out", opacity: [1, 1]}]
-    //   ]
-    // })
-    // Transitioner.default({
-    //     // in: "transition.fadeIn",
-    //     // out: "transition.fadeOut"
-    //     in: "transition.slideRightBigIn",
-    //     out: "transition.slideLeftBigOut"
-    // });
+    $.Velocity.RegisterEffect('transition.pushLeftIn', {
+      defaultDuration: 500,
+      calls: [
+        [{translateX: ['0%', '-100%'], translateZ: 0, easing: "ease-in-out", opacity: [1, 1]}]
+      ]
+    });
+    $.Velocity.RegisterEffect('transition.pushRightIn', {
+      defaultDuration: 500,
+      calls: [
+        [{translateX: ['0%', '100%'], translateZ: 0, easing: "ease-in-out", opacity: [1, 1]}]
+      ]
+    })
+    Transitioner.default({
+        // in: "transition.fadeIn",
+        // out: "transition.fadeOut"
+        in: "transition.slideRightBigIn",
+        out: "transition.slideLeftBigOut"
+    });
 });
