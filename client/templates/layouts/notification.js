@@ -3,7 +3,7 @@ Template.notification.onCreated(function(){
 })
 
 Template.notification.onRendered(function(){
-
+  initLayout();
   $$ = Dom7;
 
   // Dummy Content
