@@ -2,8 +2,15 @@ template(name="menu")
   .panel-overlay
   .panel.panel-left.panel-reveal
     .content-block
-      p
-        a(href="{{pathFor 'start'}}") Home
+      .list-block
+        ul
+          li
+            a.item-content(href="{{pathFor 'start'}}") 
+              .item-media
+                i.icon.icon-form-name
+              .item-inner
+                .item-title.label Home
+                  //- a(href="{{pathFor 'start'}}") Home
       p
         a(href="{{pathFor 'static-layout'}}") Static Layout
       p
