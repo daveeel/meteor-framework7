@@ -34,6 +34,12 @@ template(name="menu")
                 i.icon.icon-form-url
               .item-inner
                 .item-title Notification
+          li
+            a.item-content.item-link(href="{{pathFor 'map'}}")
+              .item-media
+                i.icon.icon-form-url
+              .item-inner
+                .item-title Google Map
       p
         a(href="{{pathFor 'static-layout'}}") Static Layout
       p
@@ -44,7 +50,5 @@ template(name="menu")
         a(href="{{pathFor 'test2'}}") Testing 2
       p
         a(href="{{pathFor 'search'}}") Search
-      p
-        a(href="{{pathFor 'map'}}") Map
       p
         a(href='#' class='close-panel') Close Panel

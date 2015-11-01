@@ -18,8 +18,8 @@ template(name='smartSelect')
   .list-block
     ul
       li
-        a.item-link.smart-select(href='#' data-open-in='popup' data-back-on-select='true')
-          select(name='fruits')
+        a.item-link.smart-select(href='#' data-searchbar='true' data-open-in='picker' data-searchbar-placeholder="Search City" data-back-text='Go Back')
+          select(name='cities')
             option(value='dortmund' selected) Dortmund
             option(value='amsterdam') Amsterdam
             option(value='newyork') New York
@@ -28,4 +28,20 @@ template(name='smartSelect')
             .item-inner
               .item-title Where are you from?
               .item-after Dortmund
-          
+      li
+        a.item-link.smart-select(href="#")
+          select(name="car")
+            option(value="mercedes") Mercedes
+            option(value="bmw") BMW
+            option(value="volvo") Volvo
+            option(value="vw" selected) Volkswagen
+            option(value="toyota") Toyota
+            option(value="cadillac") Cadillac
+            option(value="nissan") Nissan
+            option(value="mazda") Mazda
+            option(value="ford") Ford
+            option(value="chrysler") Chrysler
+            option(value="dodge") Dodge
+          .item-content
+            .item-inner
+              .item-title Car
