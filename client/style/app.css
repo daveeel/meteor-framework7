@@ -5,3 +5,6 @@
 .tab-link .icon {
   font-size: 35px;
 }
+.photo-browser-slide span.photo-browser-zoom-container {
+  height: 100%;
+}
