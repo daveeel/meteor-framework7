@@ -1,4 +1,6 @@
 template(name='cards')
+  style
+    | .demo-card-header-pic .card-header{height:40vw;background-size:cover;background-position:center;}.facebook-card .card-header{display:block;padding:10px;}.facebook-card .facebook-avatar{float:left;}.facebook-card .facebook-name{margin-left:44px;font-size:14px;font-weight:500;}.facebook-card .facebook-date{margin-left:44px;font-size:13px;color:#8e8e93;}.facebook-card .card-footer{background:#fafafa;}.facebook-card .card-footer a{color:#81848b;font-weight:500;}.facebook-card .card-content img{display:block;}.facebook-card .card-content-inner{padding:15px 10px;}
   .view.start-view
     .page.navbar-fixed
       .navbar
@@ -10,9 +12,23 @@ template(name='cards')
       .page-content
         .card
           .card-header
-            | Header
+            | Card Header
           .card-content
             .card-content-inner
-              | Content
+              | Card with header and footer. Card header is used to display card title and footer for some additional information or for custom actions.
           .card-footer
-              | Footer
+              | Card Footer
+        .card
+          .card-content
+            .card-content-inner
+              | Another card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat sem est, non tincidunt ligula volutpat sit amet. Mauris aliquet magna justo.  footer for some additional information or for custom actions.
+        .content-block-title Styled Cards
+        .card.demo-card-header-pic
+          .card-header.color-white.no-border(style="background-image:url(http://lorempixel.com/1000/600/nature/3/)" valign="bottom") Journey To Mountains
+          .card-content
+            .card-content-inner
+              .color-gray Posted on January 21, 2015
+              p Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...
+          .card-footer
+            a.link(href="#") Like
+            a.link(href="#") Read More
