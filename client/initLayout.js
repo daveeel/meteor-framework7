@@ -36,7 +36,7 @@ Meteor.startup(function() {
     Transitioner.default({
         // in: "transition.fadeIn",
         // out: "transition.fadeOut"
-        in: "transition.pushRightIn",
-        out: "transition.fadeOut"
+        in: "transition.slideRightBigIn",
+        out: "transition.slideLeftBigOut"
     });
 });
