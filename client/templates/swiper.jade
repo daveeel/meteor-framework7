@@ -1,0 +1,29 @@
+template(name="swiper")
+  +contentWrapper
+    .view.swiper-view
+      .page.navbar-fixed
+        .navbar
+          .navbar-inner
+            .left
+              a.link.open-panel(href='#')
+                i.icon.icon-bars
+            .center Swiper
+        .page-content
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/1")
+                .preloader
+              .swiper-slide
+                img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/2")
+                .preloader
+              .swiper-slide
+                img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/3")
+                .preloader
+              .swiper-slide
+                img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/4")
+                .preloader
+              .swiper-slide
+                img.swiper-lazy(data-src="http://lorempixel.com/1600/1200/nature/5")
+                .preloader
+            .swiper-pagination.color-white

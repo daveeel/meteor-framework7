@@ -14,7 +14,7 @@ Template.test2.onRendered(function(){
       // Emulate 2s loading
       setTimeout(function () {
           // Random image
-          var picURL = 'http://hhhhold.com/88/d/jpg?' + Math.round(Math.random() * 100);
+          var picURL = 'http://lorempixel.com/88/88/';
           // Random song
           var song = songs[Math.floor(Math.random() * songs.length)];
           // Random author

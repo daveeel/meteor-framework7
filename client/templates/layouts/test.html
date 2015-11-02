@@ -1,166 +1,162 @@
 <template name="test">
-  <div class="view">
+  {{#contentWrapper}}
+    <div class="view">
+      <a href="#" class="floating-button color-pink">
+        <i class="icon icon-plus"></i>
+      </a>
+        {{> navbar title="Misc. Test" leftIcon="icon-back" rightIcon="" subnavbar=false }}
+        <div class="pages navbar-through">
+          <div class="page navbar-fixed">
+              <div class="page-content hide-bars-on-scroll">
+                <div class="content-block">
+                  <div class="col-50"><a href="#" class="button pb-standalone-video">Popup gallery and video</a></div>
+                  <p><a href="#" class="alert-text">Alert With Text</a></p>
+                  <p><a href="#" class="alert-text-title">Alert With Text and Title</a></p>
+                  <p><a href="#" class="alert-text-title-callback">Alert With Text and Title and Callback</a></p>
+                  <p><a href="#" class="alert-text-callback">Alert With Text and Callback</a></p>
 
-    <a href="#" class="floating-button color-pink">
-      <i class="icon icon-plus"></i>
-    </a>
-      {{> navbar title="Testing Page 1" leftIcon="icon-back" rightIcon="" subnavbar=false }}
-      <div class="pages navbar-through">
-        <div class="page navbar-fixed">
+                  <p><a href="#" class="confirm-ok">Confirm with text and Ok callback</a></p>
+                  <p><a href="#" class="confirm-ok-cancel">Confirm with text, Ok and Cancel callbacks</a></p>
+                  <p><a href="#" class="confirm-title-ok">Confirm with text, title and Ok callback</a></p>
+                  <p><a href="#" class="confirm-title-ok-cancel">Confirm with text, title, Ok and Cancel callback</a></p>
 
-            <div class="page-content hide-bars-on-scroll">
-              <div class="col-50"><a href="#" class="button pb-standalone-video">Popup gallery and video</a></div>
+                  <p><a href="#" class="prompt-ok">Prompt with text and Ok callback</a></p>
+                  <p><a href="#" class="prompt-ok-cancel">Prompt with text, Ok and Cancel callbacks</a></p>
+                  <p><a href="#" class="prompt-title-ok">Prompt with text, title and Ok callback</a></p>
+                  <p><a href="#" class="prompt-title-ok-cancel">Prompt with text, title, Ok and Cancel callback</a></p>
 
-              <p><a href="#" class="alert-text">Alert With Text</a></p>
-              <p><a href="#" class="alert-text-title">Alert With Text and Title</a></p>
-              <p><a href="#" class="alert-text-title-callback">Alert With Text and Title and Callback</a></p>
-              <p><a href="#" class="alert-text-callback">Alert With Text and Callback</a></p>
+                  <p><a href="#" class="login-modal">Login Modal</a></p>
+                  <p><a href="#" class="password-modal">Password Modal</a></p>
 
-              <p><a href="#" class="confirm-ok">Confirm with text and Ok callback</a></p>
-              <p><a href="#" class="confirm-ok-cancel">Confirm with text, Ok and Cancel callbacks</a></p>
-              <p><a href="#" class="confirm-title-ok">Confirm with text, title and Ok callback</a></p>
-              <p><a href="#" class="confirm-title-ok-cancel">Confirm with text, title, Ok and Cancel callback</a></p>
+                  <p><a href="#" class="open-preloader">Open Preloader</a></p>
+                  <p><a href="#" class="open-preloader-title">Open Preloader with custom title</a></p>
 
-              <p><a href="#" class="prompt-ok">Prompt with text and Ok callback</a></p>
-              <p><a href="#" class="prompt-ok-cancel">Prompt with text, Ok and Cancel callbacks</a></p>
-              <p><a href="#" class="prompt-title-ok">Prompt with text, title and Ok callback</a></p>
-              <p><a href="#" class="prompt-title-ok-cancel">Prompt with text, title, Ok and Cancel callback</a></p>
+                  <p><a href="#" class="open-indicator">Open Indicator</a></p>
 
-              <p><a href="#" class="login-modal">Login Modal</a></p>
-              <p><a href="#" class="password-modal">Password Modal</a></p>
+                  <p><a href="#" class="open-3-modal">Modal With 3 Buttons</a></p>
+                  <p><a href="#" class="open-slider-modal">Modal With Slider</a></p>
+                  <p><a href="#" class="open-tabs-modal">Modal With Tabs</a></p>
+                  <p><a href="#" class="open-vertical-modal">Modal With Vertical Buttons</a></p>
 
-              <p><a href="#" class="open-preloader">Open Preloader</a></p>
-              <p><a href="#" class="open-preloader-title">Open Preloader with custom title</a></p>
+                  <p><a href="#" class="create-popup">Create JS Popup</a></p>
+                </div>
 
-              <p><a href="#" class="open-indicator">Open Indicator</a></p>
+                <div class="content-block">
+                  <p><a href="#" class="ac-1">One group, three buttons</a></p>
+                  <p><a href="#" class="ac-2">One group, title, three buttons</a></p>
+                  <p><a href="#" class="ac-3">Two groups</a></p>
+                  <p><a href="#" class="ac-4">Three groups</a></p>
+                  <p><a href="#" class="ac-5">With callbacks on click</a></p>
+                </div>
 
-              <p><a href="#" class="open-3-modal">Modal With 3 Buttons</a></p>
-              <p><a href="#" class="open-slider-modal">Modal With Slider</a></p>
-              <p><a href="#" class="open-tabs-modal">Modal With Tabs</a></p>
-              <p><a href="#" class="open-vertical-modal">Modal With Vertical Buttons</a></p>
+                <!-- On right side -->
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <div class="swipeout-content item-content">
+                        <div class="item-media">...</div>
+                        <div class="item-inner">swipe left + 1 action</div>
+                      </div>
+                      <div class="swipeout-actions-right">
+                        <a href="#" class="action1">Action 1</a>
+                      </div>
+                    </li>
+                    <li class="swipeout">
+                      <div class="swipeout-content item-content">
+                        <div class="item-media">...</div>
+                        <div class="item-inner">swipe left + 2 actions</div>
+                      </div>
+                      <div class="swipeout-actions-right">
+                        <a href="#" class="action1 bg-orange">Action 1</a>
+                        <a href="#" class="action2">Action 2</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
 
-              <p><a href="#" class="create-popup">Create JS Popup</a></p>
+                <!-- On left side -->
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <div class="swipeout-content item-content">
+                        <div class="item-media">...</div>
+                        <div class="item-inner">swipe right + 1 action</div>
+                      </div>
+                      <div class="swipeout-actions-left">
+                        <a href="#" class="action1">Action 1</a>
+                      </div>
+                    </li>
+                    <li class="swipeout">
+                      <div class="swipeout-content item-content">
+                        <div class="item-media">...</div>
+                        <div class="item-inner">swipe right + 2 actions</div>
+                      </div>
+                      <div class="swipeout-actions-left">
+                        <a href="#" class="action1 bg-orange">Action 1</a>
+                        <a href="#" class="action2">Action 2</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="content-block">
-                <p><a href="#" class="ac-1">One group, three buttons</a></p>
-                <p><a href="#" class="ac-2">One group, title, three buttons</a></p>
-                <p><a href="#" class="ac-3">Two groups</a></p>
-                <p><a href="#" class="ac-4">Three groups</a></p>
-                <p><a href="#" class="ac-5">With callbacks on click</a></p>
+                <!-- On both sides -->
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <div class="swipeout-content item-content">
+                        <div class="item-media">...</div>
+                        <div class="item-inner">L + R + 1 Action</div>
+                      </div>
+                      <div class="swipeout-actions-left">
+                        <a href="#" class="action1">Action L1</a>
+                      </div>
+                      <div class="swipeout-actions-right">
+                        <a href="#" class="action1">Action R1</a>
+                      </div>
+                    </li>
+                    <li class="swipeout">
+                      <div class="swipeout-content item-content">
+                        <div class="item-media">...</div>
+                        <div class="item-inner">L + R + 2 Actions</div>
+                      </div>
+                      <div class="swipeout-actions-left">
+                        <a href="#" class="action1 bg-pink">Action L1</a>
+                        <a href="#" class="action2 bg-lightblue">Action L2</a>
+                      </div>
+                      <div class="swipeout-actions-right">
+                        <a href="#" class="action1 bg-orange">Action R1</a>
+                        <a href="#" class="action2">Action R2</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-              <!-- On right side -->
-              <div class="list-block">
-                <ul>
-                  <li class="swipeout">
-                    <div class="swipeout-content item-content">
-                      <div class="item-media">...</div>
-                      <div class="item-inner">...</div>
-                    </div>
-                    <div class="swipeout-actions-right">
-                      <a href="#" class="action1">Action 1</a>
-                    </div>
-                  </li>
-                  <li class="swipeout">
-                    <div class="swipeout-content item-content">
-                      <div class="item-media">...</div>
-                      <div class="item-inner">...</div>
-                    </div>
-                    <div class="swipeout-actions-right">
-                      <a href="#" class="action1 bg-orange">Action 1</a>
-                      <a href="#" class="action2">Action 2</a>
-                    </div>
-                  </li>
-                  ...
-                </ul>
-              </div>
-
-              <!-- On left side -->
-              <div class="list-block">
-                <ul>
-                  <li class="swipeout">
-                    <div class="swipeout-content item-content">
-                      <div class="item-media">...</div>
-                      <div class="item-inner">...</div>
-                    </div>
-                    <div class="swipeout-actions-left">
-                      <a href="#" class="action1">Action 1</a>
-                    </div>
-                  </li>
-                  <li class="swipeout">
-                    <div class="swipeout-content item-content">
-                      <div class="item-media">...</div>
-                      <div class="item-inner">...</div>
-                    </div>
-                    <div class="swipeout-actions-left">
-                      <a href="#" class="action1 bg-orange">Action 1</a>
-                      <a href="#" class="action2">Action 2</a>
-                    </div>
-                  </li>
-                  ...
-                </ul>
-              </div>
-
-              <!-- On both sides -->
-              <div class="list-block">
-                <ul>
-                  <li class="swipeout">
-                    <div class="swipeout-content item-content">
-                      <div class="item-media">...</div>
-                      <div class="item-inner">...</div>
-                    </div>
-                    <div class="swipeout-actions-left">
-                      <a href="#" class="action1">Action L1</a>
-                    </div>
-                    <div class="swipeout-actions-right">
-                      <a href="#" class="action1">Action R1</a>
-                    </div>
-                  </li>
-                  <li class="swipeout">
-                    <div class="swipeout-content item-content">
-                      <div class="item-media">...</div>
-                      <div class="item-inner">...</div>
-                    </div>
-                    <div class="swipeout-actions-left">
-                      <a href="#" class="action1 bg-pink">Action L1</a>
-                      <a href="#" class="action2 bg-lightblue">Action L2</a>
-                    </div>
-                    <div class="swipeout-actions-right">
-                      <a href="#" class="action1 bg-orange">Action R1</a>
-                      <a href="#" class="action2">Action R2</a>
-                    </div>
-                  </li>
-                  ...
-                </ul>
-              </div>
+          </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="#tab1" class="tab-link active">
+                    <i class="icon fa fa-home"></i>
+                    <span class="tabbar-label">Label 1</span>
+                </a>
+                <a href="#tab2" class="tab-link">
+                    <i class="icon fa fa-home">
+                        <span class="badge bg-red">5</span>
+                    </i>
+                    <span class="tabbar-label">Label 2</span>
+                </a>
+                <a href="#tab3" class="tab-link">
+                    <i class="icon fa fa-home"></i>
+                    <span class="tabbar-label">Label 3</span>
+                </a>
+                <a href="#tab4" class="tab-link">
+                    <i class="icon fa fa-home">
+                      <span class="badge bg-green">15</span>
+                    </i>
+                    <span class="tabbar-label">Label 4</span>
+                </a>
             </div>
         </div>
-      </div>
-      <div class="toolbar tabbar tabbar-labels">
-          <div class="toolbar-inner">
-              <a href="#tab1" class="tab-link active">
-                  <i class="icon fa fa-home"></i>
-                  <span class="tabbar-label">Label 1</span>
-              </a>
-              <a href="#tab2" class="tab-link">
-                  <i class="icon fa fa-home">
-                      <span class="badge bg-red">5</span>
-                  </i>
-                  <span class="tabbar-label">Label 2</span>
-              </a>
-              <a href="#tab3" class="tab-link">
-                  <i class="icon fa fa-home"></i>
-                  <span class="tabbar-label">Label 3</span>
-              </a>
-              <a href="#tab4" class="tab-link">
-                  <i class="icon fa fa-home">
-                    <span class="badge bg-green">15</span>
-                  </i>
-                  <span class="tabbar-label">Label 4</span>
-              </a>
-          </div>
-      </div>
-  </div>
-
-
+    </div>
+  {{/contentWrapper}}
 </template>
