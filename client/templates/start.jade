@@ -18,9 +18,35 @@ template(name='start')
           +smartSelect
         
 template(name='smartSelect')
-  .content-block-title
-    a(href='/contacts') Link To Contacts
-  .content-block-title F7 Smart Select
+  .content-block-title Misc.
+  .content-block
+    p
+      a(href='/contacts') Contacts (right-to-left)
+    p
+      a.open-popover(href='#' data-popover='.popover-about')
+        | About Popover
+    p
+      a.open-popover(href='#' data-popover='.popover-links')
+        | Links Popover
+  .popover.popover-about
+    .popover-angle
+    .popover-inner
+      .content-block
+        p About
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a nunc. Quisque sodales scelerisque est, at porta justo cursus ac.  
+  .popover.popover-links
+    .popover-angle
+    .popover-inner
+      .list-block
+        li
+          a.list-button.item-link(a href='#') Link 1
+        li
+          a.list-button.item-link(a href='#') Link 2
+        li
+          a.list-button.item-link(a href='#') Link 3
+        li
+          a.list-button.item-link(a href='#') Link 4
+  .content-block-title Smart Select
   .list-block
     ul
       li
@@ -32,8 +58,21 @@ template(name='smartSelect')
             option(value='london') London
           .item-content
             .item-inner
-              .item-title Where are you from?
+              .item-title Place (picker)
               .item-after Dortmund
+      li
+        a.item-link.smart-select(href='#' data-searchbar='true' data-open-in='popup' data-searchbar-placeholder="Search Fruites" data-back-text='Okay')
+          select(name='cities')
+            option(value='dortmund' selected) Apple
+            option(value='banana') Banana
+            option(value='blueberry') Blueberry
+            option(value='cherry') Cherry
+            option(value='date') Date
+            option(value='orange') Orange
+          .item-content
+            .item-inner
+              .item-title Fruit (popup)
+              .item-after Apple
       li
         a.item-link.smart-select(href="#")
           select(name="car")
@@ -50,7 +89,7 @@ template(name='smartSelect')
             option(value="dodge") Dodge
           .item-content
             .item-inner
-              .item-title Car
+              .item-title Car (todo)
   .content-block-title Other Stuff
   .list-block
     ul
@@ -58,4 +97,4 @@ template(name='smartSelect')
         a.item-link(href='/about' data-back-text='Home')
           .item-content
             .item-inner
-              .item-title About
+              .item-title About (new page)
