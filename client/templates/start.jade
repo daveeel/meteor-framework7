@@ -28,24 +28,6 @@ template(name='smartSelect')
     p
       a.open-popover(href='#' data-popover='.popover-links')
         | Links Popover
-  .popover.popover-about
-    .popover-angle
-    .popover-inner
-      .content-block
-        p About
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a nunc. Quisque sodales scelerisque est, at porta justo cursus ac.  
-  .popover.popover-links
-    .popover-angle
-    .popover-inner
-      .list-block
-        li
-          a.list-button.item-link(a href='#') Link 1
-        li
-          a.list-button.item-link(a href='#') Link 2
-        li
-          a.list-button.item-link(a href='#') Link 3
-        li
-          a.list-button.item-link(a href='#') Link 4
   .content-block-title Smart Select
   .list-block
     ul
@@ -98,3 +80,23 @@ template(name='smartSelect')
           .item-content
             .item-inner
               .item-title About (new page)
+
+template(name='popovers')
+  .popover.popover-about
+    .popover-angle
+    .popover-inner
+      .content-block
+        p About
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a nunc. Quisque sodales scelerisque est, at porta justo cursus ac.  
+  .popover.popover-links
+    .popover-angle
+    .popover-inner
+      .list-block
+        li
+          a.list-button.item-link(a href='#') Link 1
+        li
+          a.list-button.item-link(a href='#') Link 2
+        li
+          a.list-button.item-link(a href='#') Link 3
+        li
+          a.list-button.item-link(a href='#') Link 4
