@@ -4,9 +4,9 @@ A fork from https://github.com/dnish/meteor-framework7 to learn how to make fram
 
 - Added as many working example as possible
 
-- switched to [flow-router](https://atmospherejs.com/kadira/flow-router) and [mcissel:flow-transition](https://atmospherejs.com/mcissel/flow-transition) (Thanks to [TomFreudenberg](https://github.com/TomFreudenberg)). 
+- switched to [flow-router](https://atmospherejs.com/kadira/flow-router) (Thanks to [TomFreudenberg](https://github.com/TomFreudenberg))
+- transition works with [philippspo:momentum-flow-router] (https://atmospherejs.com/philippspo/momentum-flow-router). Example: Menu -> Contacts -> Contact Detail
 
 # TODO
 
-- Make Flow Transition work
 - Get F7 smart-select to render in next page instead of just in-view popup/picker
