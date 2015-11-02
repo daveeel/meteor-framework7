@@ -1,9 +1,7 @@
 <template name="android">
   {{>menu}}
   <div class="views">
-    {{#transitioner}}
-      {{>yield}}
-    {{/transitioner}}
+    {{> Template.dynamic template=main}}
   </div>
 </template>
 

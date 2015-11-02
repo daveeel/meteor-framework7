@@ -18,8 +18,11 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 #autopublish             # Publish all data to the clients (for prototyping)
 #insecure                # Allow all DB writes from clients (for prototyping)
-iron:router
-ccorcos:transitioner
+
+kadira:flow-router
+kadira:blaze-layout
+mcissel:flow-transition
+
 mquandalle:jade
 dessix:livescript-compiler
 

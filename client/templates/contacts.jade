@@ -15,6 +15,6 @@ template(name='contacts')
                 li.list-group-title {{this}}
                 each person_of_group this
                   li
-                    a.item-content.item-link(href="{{pathFor 'contactDetail'}}")
+                    a.item-content.item-link(href="/contactDetail")
                       .item-inner
                         .item-title {{ this }}
