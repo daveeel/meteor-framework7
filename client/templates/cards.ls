@@ -1,0 +1,2 @@
+Template.cards.onRendered !->
+  initLayout!

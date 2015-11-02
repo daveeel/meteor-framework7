@@ -15,3 +15,9 @@ FlowRouter.route do
   name: \cards
   action: (params) !->
     BlazeLayout.render 'layout' { main: this.name }
+
+FlowRouter.route do
+  \/about
+  name: \about
+  action: (params) !->
+    BlazeLayout.render 'layout' { main: this.name }
