@@ -1,24 +1,30 @@
+template(name='contentWrapper')
+  .frt-fixed-content-wrapper
+    +UI.contentBlock
+    
 template(name='start')
-  .view.start-view
-    .page.navbar-fixed
-      .navbar
-        .navbar-inner
-          .left
-            a.link.open-panel(href='#')
-              i.icon.icon-bars
-          .center Welcome
-      .page-content
-        .content-block
-          p This is a little F7 demo with Meteor
-        +smartSelect
+  +contentWrapper
+    .view.start-view
+      .page.navbar-fixed
+        .navbar
+          .navbar-inner
+            .left
+              a.link.open-panel(href='#')
+                i.icon.icon-bars
+            .center Welcome
+        .page-content
+          .content-block
+            p Framework7 + Meteor + flow-router
+          +smartSelect
         
 template(name='smartSelect')
-  .content-block-title This is smart select element
-    a(href='/contacts') Contact Link
+  .content-block-title
+    a(href='/contacts') Link To Contacts
+  .content-block-title F7 Smart Select
   .list-block
     ul
       li
-        a.item-link.smart-select(href='#' data-searchbar='true' data-open-in='picker' data-searchbar-placeholder="Search City" data-back-text='Go Back')
+        a.item-link.smart-select(href='#' data-searchbar='true' data-open-in='picker' data-searchbar-placeholder="Search City" data-back-text='Close')
           select(name='cities')
             option(value='dortmund' selected) Dortmund
             option(value='amsterdam') Amsterdam

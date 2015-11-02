@@ -1,0 +1,9 @@
+template(name="map")
+  +contentWrapper
+    .view.view-main
+      .pages
+        .page.navbar-fixed.toolbar-fixed(data-page="index")
+          +navbar title="Google Map" leftIcon="icon-back" rightIcon=""
+          .page-content.hide-bars-on-scroll
+              .map-container(style="height: 100%; width: 100%;")
+                +googleMap name="map" options=mapOptions

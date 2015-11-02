@@ -1,2 +1,2 @@
-Template.android.onRendered !->
+Template.layout.onRendered !->
     initLayout!

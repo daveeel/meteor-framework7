@@ -1,8 +1,10 @@
 <template name="layout">
   {{>menu}}
-  <div class="views">
-    {{> Template.dynamic template=main}}
-  </div>
+    <div class="views">
+      {{#momentum plugin='flow-router'}}
+        {{> Template.dynamic template=main}}
+      {{/momentum}}
+    </div>
 </template>
 
 <head>
