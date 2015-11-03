@@ -1,0 +1,22 @@
+<template name="map">
+  {{#contentWrapper}}
+    <div class="view view-main">
+      <div class="pages">
+        <div data-page="index" class="page navbar-fixed toolbar-fixed">
+            <!-- Top Navbar-->
+            {{> navbar title="Google Map" leftIcon="icon-back" rightIcon="" }}
+            <!-- /End of Top Navbar-->
+
+          <div class="page-content hide-bars-on-scroll">
+
+              <div class="map-container" style="height: 100%; width: 100%;">
+                  {{> googleMap name="map" options=mapOptions}}
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  {{/contentWrapper}}
+</template>

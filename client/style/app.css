@@ -1,10 +1,35 @@
-.panel {
-  background-color: white;
-}
-
 .tab-link .icon {
   font-size: 35px;
 }
 .photo-browser-slide span.photo-browser-zoom-container {
   height: 100%;
+}
+body {
+  background: #074d55;
+  background: -moz-radial-gradient(center, ellipse cover, #a7cfdf 0%, #23538a 100%);
+  background: -webkit-gradient(radial, right bottom, 0px, left top, 100%, color-stop(0%, #6967a5), color-stop(50%, #2075a1), color-stop(100%, #074d55));
+  background: -webkit-radial-gradient(right bottom, ellipse cover, #6967a5 0%, #2075a1 50%, #074d55 100%);
+  background: radial-gradient(ellipse at right bottom, #6967a5 0%, #2075a1 50%, #074d55 100%);
+}
+.panel .page, .panel .pages, .panel {
+  background: none;
+}
+.panel .list-block ul {
+  background: none;
+  border: none;
+}
+.panel .list-block .item-link {
+  color: #fff;
+}
+.panel a {
+  color: #fff;
+}
+.panel .list-block .item-link:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+.panel .list-block .item-inner {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.panel .content-block, .panel .content-block-title {
+  color: #fff;
 }

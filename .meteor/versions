@@ -40,7 +40,6 @@ ecmascript-runtime@0.2.6
 ejson@1.0.7
 es5-shim@4.1.14
 fastclick@1.0.7
-force-ssl@1.0.6
 fortawesome:fontawesome@4.4.0
 geojson-utils@1.0.4
 gwendall:body-events@0.1.6
@@ -71,6 +70,7 @@ mongo-id@1.0.1
 mousetrap:mousetrap@1.4.6_1
 mquandalle:jade@0.4.5
 mquandalle:jade-compiler@0.4.5
+mystor:device-detection@0.2.0
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4

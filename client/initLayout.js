@@ -10,7 +10,7 @@ initLayout = function()
             materialRipple: false, //having some performance problems....
             showBarsOnPageScrollEnd: false,
             swipePanel: 'left',
-            // panelsCloseByOutside: true
+            panelsCloseByOutside: true
         });
     }
     else

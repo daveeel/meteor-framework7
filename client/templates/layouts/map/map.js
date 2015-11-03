@@ -1,4 +1,3 @@
-
 Meteor.startup(function() {
   GoogleMaps.load({ v: '3'});
   var currentLoc = Geolocation.latLng();

@@ -5,4 +5,5 @@ Transitioner.setTransitions do
   'about->start': 'left-to-right'
   'start->contacts': 'right-to-left'
   'contacts->start': 'left-to-right'
-  'default': 'fade'
+  # 'default': 'fade'
+  'default': 'right-to-left'

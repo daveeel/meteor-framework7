@@ -34,5 +34,6 @@ mdg:geolocation
 dburles:google-maps
 
 philippspo:momentum-flow-router
-force-ssl
+#force-ssl
 appcache
+mystor:device-detection
