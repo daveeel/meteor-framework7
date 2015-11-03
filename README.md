@@ -2,7 +2,8 @@
 
 ## Live Demo: 
 
-- http://meteor7.meteor.com/
+- https://meteor7.meteor.com/ (flow-router. Dynamic load content load issue, e.g. Google Map, Swiper)
+- https://meteor7-iron.meteor.com/ (iron:router. Better consistency)
 
 ## Changes from parent branch
 
