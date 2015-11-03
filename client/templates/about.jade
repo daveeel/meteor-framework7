@@ -14,18 +14,24 @@ template(name='about')
         .page-content
           .card
             .card-header
-              | GitHub Repository
+              | Source Repository
             .card-content
-              .card-content-inner
-                .fa.fa-github
-                a.external(a href='https://github.com/daveeel/meteor7') 
-                  | https://github.com/daveeel/meteor7
+              .list-block.media-list
+                .item-content
+                  .item-media
+                    .fa.fa-github.icon(style='font-size:40px;')
+                  .item-inner
+                    .item-title-row
+                      | Find us on GitHub
+                    .item-subtitle
+                      a.external(a href='https://github.com/daveeel/meteor7') 
+                        | /daveeel/meteor7
             .card-footer
                 | Pull Requests Are Always Welcome!
           .card
             .card-content
               .card-content-inner
-                | Another card. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat sem est, non tincidunt ligula volutpat sit amet. Mauris aliquet magna justo.  footer for some additional information or for custom actions.
+                | Another card without header and footer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat sem est, non tincidunt ligula volutpat sit amet. Mauris aliquet magna justo.  footer for some additional information or for custom actions.
           .content-block-title Styled Cards
           .card.demo-card-header-pic
             .card-header.color-white.no-border(style="background-image:url(http://lorempixel.com/1000/600/nature/3/)" valign="bottom") Journey To Mountains
