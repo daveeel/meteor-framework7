@@ -21,7 +21,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 kadira:flow-router
 kadira:blaze-layout
-mcissel:flow-transition
 
 mquandalle:jade
 dessix:livescript-compiler
@@ -35,3 +34,5 @@ mdg:geolocation
 dburles:google-maps
 
 philippspo:momentum-flow-router
+force-ssl
+appcache

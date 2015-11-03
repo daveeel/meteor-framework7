@@ -12,23 +12,19 @@ template(name='start')
             .left
               a.link.open-panel(href='#')
                 i.icon.icon-bars
-            .center Welcome
+            .center Meteor + F7
         .page-content
-          .content-block
-            p Framework7 + Meteor + flow-router
           +smartSelect
+          +others
         
 template(name='smartSelect')
-  .content-block-title Misc.
+  .content-block-title Popovers
   .content-block
     p
-      a(href='/contacts') Contacts (right-to-left)
-    p
       a.open-popover(href='#' data-popover='.popover-about')
-        | About Popover
-    p
+        | Text /
       a.open-popover(href='#' data-popover='.popover-links')
-        | Links Popover
+        | Links
   .content-block-title Smart Select
   .list-block
     ul
@@ -73,14 +69,24 @@ template(name='smartSelect')
           .item-content
             .item-inner
               .item-title Car (todo)
+
+template(name='others')
   .content-block-title Other Stuff
+  .list-block
+    ul
+      li
+        a.item-link(href='/contacts' data-back-text='Home')
+          .item-content
+            .item-inner
+              .item-title Contacts (right-to-left)
+  .content-block-title About
   .list-block
     ul
       li
         a.item-link(href='/about' data-back-text='Home')
           .item-content
             .item-inner
-              .item-title About (new page)
+              .item-title Contribute to the Demo
 
 template(name='popovers')
   .popover.popover-about
