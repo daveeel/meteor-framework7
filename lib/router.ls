@@ -21,3 +21,9 @@ FlowRouter.route do
   name: \about
   action: (params) !->
     BlazeLayout.render 'layout' { main: this.name }
+
+FlowRouter.route do
+  \/login
+  name: \login
+  action: (params) !->
+    BlazeLayout.render 'layout' { main: this.name }
