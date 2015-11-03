@@ -1,0 +1,2 @@
+Template.login.onRendered !->
+  initLayout!
