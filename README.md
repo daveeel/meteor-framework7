@@ -1,12 +1,10 @@
-# Meteor+Framework7+FlowRouter Demo
+# Meteor+Framework7+IronRouter Demo
 
 ## Live Demo: 
 
 - http://meteor7-iron.meteor.com/
 
 ## Changes from parent branch
-
-- Added as many working example as possible
 
 - switched back to iron:router for better consistency of dynamic components such as google map & swiper
 
