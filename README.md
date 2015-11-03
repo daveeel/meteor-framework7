@@ -1,4 +1,8 @@
-A fork from https://github.com/dnish/meteor-framework7 to learn how to make framework7 work on Meteor
+# Meteor+Framework7+FlowRouter Demo
+
+# Live Demo: 
+
+- http://meteor7.meteor.com/
 
 # Changes from parent branch
 
