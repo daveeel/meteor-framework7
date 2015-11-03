@@ -2,18 +2,15 @@
 
 ## Live Demo: 
 
-- http://meteor7.meteor.com/
+- http://meteor7-iron.meteor.com/
 
 ## Changes from parent branch
 
 - Added as many working example as possible
 
-- switched to [flow-router](https://atmospherejs.com/kadira/flow-router) (Thanks to [TomFreudenberg](https://github.com/TomFreudenberg))
-- transition works with [philippspo:momentum-flow-router] (https://atmospherejs.com/philippspo/momentum-flow-router). Example: Menu -> Contacts -> Contact Detail
+- switched back to iron:router for better consistency of dynamic components such as google map & swiper
 
 ## Known issues
-
-- momentum-flow-router caused swiper & google map not to render on default 'fade' transition.
 
 ## TODO
 
