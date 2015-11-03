@@ -1,0 +1,34 @@
+template(name="login")
+  +contentWrapper
+    .login-screen.modal-in(style="display:block")
+      .view
+        .page.navbar-fixed
+          //- <!-- page-content has additional login-screen content -->
+          .navbar
+            .navbar-inner
+              .left
+              .center.login-screen-title Login
+              .right
+          .page-content
+            //- <!-- Login form -->
+            form
+            
+              .list-block
+                ul
+                  li.item-content
+                    .item-inner
+                      .item-title.label Username
+                      .item-input
+                        input(type="text" name="username" placeholder="Username")
+                  li.item-content
+                    .item-inner
+                      .item-title.label Password
+                      .item-input
+                        input(type="password" name="password" placeholder="Password")
+
+              .list-block
+                ul
+                  li
+                    a.item-link.list-button(href="/") Sign In
+                .list-block-label
+                  p Some text with login information.
