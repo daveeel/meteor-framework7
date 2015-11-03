@@ -2,9 +2,9 @@
   {{>popovers}}
   {{>menu}}
   <div class="views">
-    {{#momentum plugin='flow-router'}}
-      {{> Template.dynamic template=main}}
-    {{/momentum}}
+    {{#transitioner}}
+      {{>yield}}
+    {{/transitioner}}
   </div>
 </template>
 

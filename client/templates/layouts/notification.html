@@ -1,28 +1,26 @@
 <template name="notification">
-  {{#contentWrapper}}
-    <div class="view">
-      <div class="page navbar-fixed">
-        {{> navbar title="Notification List" leftIcon="icon-back" rightIcon="" }}
+  <div class="view">
+    <div class="page navbar-fixed">
+      {{> navbar title="Notification List" leftIcon="icon-back" rightIcon="" }}
 
-        <div class="page-content pull-to-refresh-content">
-          <div class="pull-to-refresh-layer">
-            <div class="preloader"></div>
-            <div class="pull-to-refresh-arrow"></div>
-          </div>
-          <div class="list-block media-list">
-            <ul>
-              {{#each notificationItems}}
-                {{> notificationItem}}
-              {{/each}}
-            </ul>
-            <div class="list-block-label">
-              <p>Just pull page down to let the magic happen. Notification items will be added to Mongo collections</p>
-            </div>
+      <div class="page-content pull-to-refresh-content">
+        <div class="pull-to-refresh-layer">
+          <div class="preloader"></div>
+          <div class="pull-to-refresh-arrow"></div>
+        </div>
+        <div class="list-block media-list">
+          <ul>
+            {{#each notificationItems}}
+              {{> notificationItem}}
+            {{/each}}
+          </ul>
+          <div class="list-block-label">
+            <p>Just pull page down to let the magic happen. Notification items will be added to Mongo collections</p>
           </div>
         </div>
       </div>
     </div>
-  {{/contentWrapper}}
+  </div>
 </template>
 
 <template name="notificationItem">

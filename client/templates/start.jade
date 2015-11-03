@@ -4,19 +4,18 @@ template(name='contentWrapper')
     +UI.contentBlock
     
 template(name='start')
-  +contentWrapper
-    .view.start-view
-      .page.navbar-fixed
-        .navbar
-          .navbar-inner
-            .left
-              a.link.open-panel(href='#')
-                i.icon.icon-bars
-            .center Meteor + F7
-            .right
-        .page-content
-          +smartSelect
-          +others
+  .view.start-view
+    .page.navbar-fixed
+      .navbar
+        .navbar-inner
+          .left
+            a.link.open-panel(href='#')
+              i.icon.icon-bars
+          .center Meteor + F7
+          .right
+      .page-content
+        +smartSelect
+        +others
         
 template(name='smartSelect')
   .content-block-title Popovers

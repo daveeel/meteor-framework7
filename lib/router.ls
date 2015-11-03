@@ -1,29 +1,58 @@
-FlowRouter.route do
+Router.configure do
+  layoutTemplate: \layout
+
+Router.route do
+  \/
+  name: \start
+
+Router.route do
+  \/swiper
+  name: \swiper
+
+Router.route do
+  \/notification
+  name: \notification
+
+Router.route do
+  \/map
+  name: \map
+
+Router.route do
   \/contacts
   name: \contacts
-  action: !->
-    BlazeLayout.render('layout', { main: this.name })
 
-FlowRouter.route do
+Router.route do
   \/contactDetail
   name: \contactDetail
-  action: !->
-    BlazeLayout.render 'layout' { main: this.name }
 
-FlowRouter.route do
+Router.route do
   \/cards
   name: \cards
-  action: (params) !->
-    BlazeLayout.render 'layout' { main: this.name }
 
-FlowRouter.route do
+Router.route do
   \/about
   name: \about
-  action: (params) !->
-    BlazeLayout.render 'layout' { main: this.name }
 
-FlowRouter.route do
+Router.route do
   \/login
   name: \login
-  action: (params) !->
-    BlazeLayout.render 'layout' { main: this.name }
+
+Router.route do
+  \/static
+  name: \static
+
+Router.route do
+  \/fixed
+  name: \fixed
+
+Router.route do
+  \/test
+  name: \test
+
+Router.route do
+  \/test2
+  name: \test2
+
+Router.route do
+  \/search
+  name: \search

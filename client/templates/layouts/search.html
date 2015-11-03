@@ -1,63 +1,61 @@
 <template name="search">
-  {{#contentWrapper}}
-    <div class="view">
-      {{> navbar title="Search" leftIcon="icon-bars" rightIcon="" subnavbar=false }}
-      <div class="pages navbar-fixed">
-        <div data-page="home" class="page">
-          <!-- Search bar -->
-          <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
-            <div class="searchbar-input">
-              <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
-            </div><a href="#" class="searchbar-cancel">Cancel</a>
-          </form>
+  <div class="view">
+    {{> navbar title="Search" leftIcon="icon-bars" rightIcon="" subnavbar=false }}
+    <div class="pages navbar-fixed">
+      <div data-page="home" class="page">
+        <!-- Search bar -->
+        <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+          <div class="searchbar-input">
+            <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+          </div><a href="#" class="searchbar-cancel">Cancel</a>
+        </form>
 
-          <!-- Search bar overlay -->
-          <div class="searchbar-overlay"></div>
+        <!-- Search bar overlay -->
+        <div class="searchbar-overlay"></div>
 
-          <div class="page-content">
-            <!-- This block will be displayed if nothing found -->
-            <div class="content-block searchbar-not-found">
-              <div class="content-block-inner">Nothing found</div>
-            </div>
+        <div class="page-content">
+          <!-- This block will be displayed if nothing found -->
+          <div class="content-block searchbar-not-found">
+            <div class="content-block-inner">Nothing found</div>
+          </div>
 
-            <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
-            <div class="list-block list-block-search searchbar-found">
-              <ul>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">apple</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">banana</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">candy</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">date</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">egg</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">fruit</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+          <div class="list-block list-block-search searchbar-found">
+            <ul>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">apple</div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">banana</div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">candy</div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">date</div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">egg</div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">fruit</div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  {{/contentWrapper}}
+  </div>
 </template>

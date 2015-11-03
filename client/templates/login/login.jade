@@ -1,29 +1,28 @@
 template(name="login")
-  +contentWrapper
-    .view
-      .page.navbar-fixed
-        .navbar
-          .navbar-inner
-            .left
-            .center Login
-            .right
-        .page-content.login-screen-content
-          form
-            .list-block
-              ul
-                li.item-content
-                  .item-inner
-                    .item-title.label Username
-                    .item-input
-                      input(type="text" name="username" placeholder="Username")
-                li.item-content
-                  .item-inner
-                    .item-title.label Password
-                    .item-input
-                      input(type="password" name="password" placeholder="Password")
-            .list-block
-              ul
-                li
-                  a.item-link.list-button(href="/") Sign In
-              .list-block-label
-                p Some text with login information.
+  .view
+    .page.navbar-fixed
+      .navbar
+        .navbar-inner
+          .left
+          .center Login
+          .right
+      .page-content.login-screen-content
+        form
+          .list-block
+            ul
+              li.item-content
+                .item-inner
+                  .item-title.label Username
+                  .item-input
+                    input(type="text" name="username" placeholder="Username")
+              li.item-content
+                .item-inner
+                  .item-title.label Password
+                  .item-input
+                    input(type="password" name="password" placeholder="Password")
+          .list-block
+            ul
+              li
+                a.item-link.list-button(href="/") Sign In
+            .list-block-label
+              p Some text with login information.
