@@ -33,7 +33,7 @@ Meteor.startup(function() {
     //     [{translateX: ['0%', '100%'], translateZ: 0, easing: "ease-in-out", opacity: [1, 1]}]
     //   ]
     // })
-    // 
+    //
 /* TODO:
     FlowTransition.default({
         // in: "transition.fadeIn",

@@ -7,6 +7,7 @@ Template.test.events({
 });
 
 Template.test.onRendered(function(){
+  initLayout();
 
   $$ = Dom7;
 
@@ -225,7 +226,7 @@ Template.test.onRendered(function(){
         },
       ]
     })
-  });   
+  });
 
   $$('.create-popup').on('click', function () {
     var popupHTML = '<div class="popup">'+

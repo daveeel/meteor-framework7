@@ -1,5 +1,6 @@
 Template.test2.onRendered(function(){
-
+  initLayout();
+  
   $$ = Dom7;
 
   // Dummy Content
