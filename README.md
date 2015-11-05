@@ -8,9 +8,7 @@
 ## Flow Router
 
 - [flow-router](https://atmospherejs.com/kadira/flow-router) (Thanks to [TomFreudenberg](https://github.com/TomFreudenberg))
-
 - https://meteor7.meteor.com/ (flow-router. Dynamic load content load issue, e.g. Google Map, Swiper)
-
 - transition works with [philippspo:momentum-flow-router] (https://atmospherejs.com/philippspo/momentum-flow-router). Example: Menu -> Contacts -> Contact Detail
 
 ### Issues
