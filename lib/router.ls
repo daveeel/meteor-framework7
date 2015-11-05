@@ -56,3 +56,11 @@ Router.route do
 Router.route do
   \/search
   name: \search
+
+Router.route do
+  \/buttons
+  name: \buttons
+
+Router.route do
+  \/intro
+  name: \intro

@@ -3,6 +3,7 @@ $$ = Dom7;
 
 initLayout = function()
 {
+
     if(myApp == null)
     {
         myApp = new Framework7({

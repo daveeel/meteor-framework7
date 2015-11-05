@@ -70,6 +70,13 @@ Transitioner.transition do
   velocityAnimation:
     in: 'transition.pushLeftIn'
     out: 'transition.pushRightOut'
+
+Transitioner.transition do
+  fromRoute: 'intro'
+  toRoute: 'start'
+  velocityAnimation:
+    in: 'transition.pushLeftIn'
+    out: 'transition.pushRightOut'
 # Transitioner.transition do
 #   fromRoute: 'fade'
 #   toRoute: 'main'
