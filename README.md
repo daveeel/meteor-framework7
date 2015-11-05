@@ -1,18 +1,19 @@
 # Meteor+Framework7+FlowRouter Demo
 
-## Live Demo: 
+## Iron Router Branch (More actively maintained)
 
-- https://meteor7.meteor.com/ (flow-router. Dynamic load content load issue, e.g. Google Map, Swiper)
+- https://github.com/daveeel/meteor7/tree/iron-router
 - https://meteor7-iron.meteor.com/ (iron:router. Better consistency)
 
-## Changes from parent branch
+## Flow Router
 
-- Added as many working example as possible
+- [flow-router](https://atmospherejs.com/kadira/flow-router) (Thanks to [TomFreudenberg](https://github.com/TomFreudenberg))
 
-- switched to [flow-router](https://atmospherejs.com/kadira/flow-router) (Thanks to [TomFreudenberg](https://github.com/TomFreudenberg))
+- https://meteor7.meteor.com/ (flow-router. Dynamic load content load issue, e.g. Google Map, Swiper)
+
 - transition works with [philippspo:momentum-flow-router] (https://atmospherejs.com/philippspo/momentum-flow-router). Example: Menu -> Contacts -> Contact Detail
 
-## Known issues
+### Issues
 
 - momentum-flow-router caused swiper & google map not to render on default 'fade' transition.
 
