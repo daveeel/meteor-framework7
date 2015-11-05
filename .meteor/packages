@@ -38,5 +38,8 @@ dburles:google-maps
 
 #philippspo:momentum-flow-router
 #force-ssl
-appcache
+#appcache
 mystor:device-detection
+
+# DB
+meteorhacks:subs-manager
