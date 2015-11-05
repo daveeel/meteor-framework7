@@ -1,0 +1,2 @@
+Template.buttons.onRendered !->
+  initLayout!

@@ -72,13 +72,33 @@ template(name='smartSelect')
 
 template(name='others')
   .content-block-title Other Stuff
+  
   .list-block
     ul
       li
-        a.item-link(href='/contacts' data-back-text='Home')
-          .item-content
-            .item-inner
-              .item-title Contacts (right-to-left)
+        a.item-link.item-content(href='/contacts')
+          .item-inner
+            .item-title Contacts (right-to-left)
+            
+  .list-block.accordion-list
+    ul
+    
+      li.accordion-item
+        a.item-link.item-content
+          .item-inner
+            .item-title Click to expand
+        .accordion-item-content
+          .content-block
+            p Lorem
+            
+      li.accordion-item
+        a.item-link.item-content
+          .item-inner
+            .item-title Click to expand 2
+        .accordion-item-content
+          .content-block
+            p ipsum
+            
   .content-block-title About
   .list-block
     ul
